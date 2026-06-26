@@ -1,0 +1,143 @@
+Desenvolvimento de uma Landing Page institucional responsiva
+Construir uma página web completa para divulgação de um serviço, empresa fictícia ou projeto acadêmico, aplicando os conceitos estudados ao longo da disciplina.
+
+Objetivos
+
+    Estruturar semanticamente uma página HTML.
+    Aplicar CSS para estilização visual.
+    Utilizar Flexbox e Grid Layout.
+    Organizar conteúdo em múltiplas seções.
+    Criar um layout responsivo.
+    Desenvolver interfaces com boa hierarquia visual.
+
+Requisitos obrigatórios
+A página deverá conter:
+1. Cabeçalho (Header)
+
+    Logomarca (texto ou imagem).
+    Menu de navegação com:
+    Início
+    Serviços
+    Sobre
+    Contato
+
+Utilizar Flexbox para alinhamento.
+
+2. Seção Hero
+Contendo:
+
+    Título principal.
+    Texto de apresentação.
+    Botão de chamada para ação (CTA).
+    Imagem ilustrativa.
+
+Exemplo:
+Soluções Digitais para Transformar seu Negócio
+
+3. Seção de serviços
+Apresentar pelo menos 4 serviços.
+Utilizar Grid Layout.
+Cada card deve conter:
+
+    Ícone ou imagem.
+    Título.
+    Descrição.
+
+Exemplo:
+
+Serviço
+
+Desenvolvimento Web
+
+Aplicativos Mobile
+
+UX/UI Design
+
+Consultoria em TI
+
+4. Seção Sobre
+Contendo:
+
+    Texto institucional.
+    Imagem ao lado.
+
+Utilizar Flexbox.
+
+5. Seção de Depoimentos
+Criar pelo menos 3 cards de depoimentos.
+Exemplo:
+"Excelente atendimento e entrega rápida."
+
+6. Rodapé
+Contendo:
+
+    Redes sociais.
+    E-mail.
+    Telefone.
+    Direitos autorais.
+
+Requisitos técnicos
+O projeto deve obrigatoriamente utilizar:
+✅ HTML5 semântico - Elementos: <header>,<nav>, <main>, <section>, <footer>
+
+✅ CSS externo - <link rel="stylesheet" href="style.css">
+
+✅ Flexbox - Em pelo menos: Cabeçalho e Seção Sobre
+
+✅ Grid Layout - Na seção de serviços.
+
+✅ Efeito Hover em: Botões e Cards
+
+✅ Responsividade - Utilizar Media Query:
+
+Critérios de avaliação
+
+   Critério                                         Pontos    
+
+Estrutura HTML semântica             2,0
+
+Aplicação correta de CSS               2,0
+
+Uso de Flexbox                                 1,5
+
+Uso de Grid Layout                          1,5
+
+Responsividade                                1,5
+
+Organização e qualidade visual     1,5       
+
+Total                                                10,0
+
+Desafio extra (+1,0 ponto)
+Implementar uma das funcionalidades abaixo:
+
+    Menu fixo (sticky navbar);
+    Animações com CSS;
+    Modo escuro (Dark Mode);
+    Galeria de imagens;
+    Formulário de contato estilizado.
+
+Entrega
+Enviar em arquivo compactado (.zip):
+
+    index.html
+    style.css
+    pasta de imagens*
+
+Ou publicar no:
+
+    GitHub Pages
+    Netlify
+    Vercel
+
+e enviar o link na entrega da atividade + arquivo md com descrição dos requisitos obrigatórios e opcionais implementados.
+
+Obs.: *lembrar de manter organização de diretórios padrão
+
+pink: #f1007a
+
+cyan: #01a9e2
+
+orange: #faa90b
+
+border-color: #20101f
