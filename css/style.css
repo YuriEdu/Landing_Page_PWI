@@ -386,7 +386,11 @@ footer {
 
 #mobile-brand {
     grid-area: mobile-brand;
-    width: 80%;
+    width: 50vw;
+}
+
+#mobile-brand img {
+    width: 200px;
 }
 
 #mobile-nav {
