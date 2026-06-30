@@ -1,5 +1,8 @@
 const header = document.querySelector("header");
-const heroSection = document.getElementById("hero-section")
+const heroSection = document.getElementById("hero-section");
+const main = document.querySelector("main");
+const body = document.querySelector("body");
+const overlay = document.querySelector("#pageOverlay");
 
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
@@ -11,8 +14,17 @@ function handleBreakpointChange(event) {
                 <img src="images/SGP_Logo_Small.png" alt="">
             </div>
             <div id="mobile-nav">
-                <i class="fa-solid fa-bars fa-3x"></i>
+                <i id="bars" class="fa-solid fa-bars fa-3x"></i>
             </div>
+            <ul class="mobile-nav-links" id="mobile-nav-links">
+                <div id="mobile-nav-brand">
+                    <img src="images/SGP_Logo_Small.png" alt="">
+                </div>
+                <li><i class="fa-regular fa-home fa-2x"></i><a href="#inicio">Início</a></li>
+                <li><i class="fa-regular fa-handshake fa-2x"></i><a href="#serviços">Serviços</a></li>
+                <li><i class="fa-solid fa-question fa-2x"></i><a href="#sobre">Sobre</a></li>
+                <li><i class="fa-solid fa-bullhorn fa-2x"></i><a href="#contato">Contato</a></li>
+            </ul>
         </div>
     `;
     heroSection.innerHTML = `
@@ -20,6 +32,37 @@ function handleBreakpointChange(event) {
             <img src="images/SGP_Logo.png" alt="">
         </div>
     `;
+    main.innerHTML = `
+        <div id="mobile-main-section">
+            <div id="mobile-hero">
+                <img id="mobile-herocard" src="images/herocard.png" alt="">
+            </div>
+            <div class="mobile-card" id="mobile-card1">
+                <img id="escrita" src="images/escrita.png" alt="">
+            </div>
+            <div class="mobile-card" id="mobile-card2">
+                <img src="images/editing.png" alt="">
+            </div>
+            <div class="mobile-card" id="mobile-card3">
+                <img src="images/tv.png" alt="">
+            </div>
+        </div>
+    `
+    const hamburger = document.getElementById('bars');
+    const navLinks = document.getElementById('mobile-nav-links');
+
+    hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            overlay.classList.toggle('active');
+
+            body.classList.toggle('nav-open');
+
+            hamburger.classList.toggle('fa-x');
+            hamburger.classList.toggle('fa-bars');
+
+            const isOpen = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
   } else {
     header.innerHTML = `        
         <div id="header-content">
@@ -41,6 +84,22 @@ function handleBreakpointChange(event) {
             <img src="images/SGP_Logo.png" alt="">
         </div>
         <h3>Trazendo comerciais <strong>profissionais</strong> para o seu negócio</h3>
+    `;
+    main.innerHTML = `
+        <div id="main-section">
+            <div id="hero">
+                <img id="herocard" src="images/herocard.png" alt="">
+            </div>
+            <div class="card" id="card1">
+                <img id="escrita" src="images/escrita.png" alt="">
+            </div>
+            <div class="card" id="card2">
+                <img src="images/editing.png" alt="">
+            </div>
+            <div class="card" id="card3">
+                <img src="images/tv.png" alt="">
+            </div>
+        </div>
     `;
   }
 }

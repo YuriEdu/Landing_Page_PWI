@@ -12,6 +12,7 @@
     --footer-link-color: #adb5bd;
     --footer-link-hover-color: #ffffff;
     --footer-border-color: #3b3f44;
+    overflow-x: hidden;
 }
 
 * {
@@ -62,7 +63,11 @@ img {
     padding: 0 1rem;
 }
 
-main {
+i {
+    color:#20101f;
+}
+
+#main-section {
     flex: 1;
     width: 1500px;
     background-color: #faa90b;
@@ -142,6 +147,7 @@ main {
 }
 
 header {
+    z-index: 999;
     width: 100%;
     height: 80px;
     padding: 16px;
@@ -149,6 +155,7 @@ header {
     background-color: white;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #header-content {
@@ -358,16 +365,19 @@ footer {
     * {
         overflow-x: hidden;
     }
-
+    
     #depoimentos {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     .depoimento {
         width: 120vw;
+        transition: none;
     }
 
     #hero-section {
@@ -378,30 +388,66 @@ footer {
 #mobile-header {
     display: grid;
     height: auto;
-    grid-template-columns: 2fr 2fr;
+    z-index: 999;
+    grid-template-columns: 3fr 2fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-        "mobile-brand mobile-nav";
+        "mobile-nav mobile-brand .";
+    overflow: hidden;
 }
 
 #mobile-brand {
     grid-area: mobile-brand;
-    width: 50vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 #mobile-brand img {
-    width: 200px;
+    width: 100%;
 }
 
 #mobile-nav {
     grid-area: mobile-nav;
     width: 100%;
-    text-align: right;
-    padding-top: 10px;
+    text-align: left;
+    height: 100%;
+    padding-top: 5px;
+    overflow: hidden;
 }
 
 #mobile-big-hero img {
     height: 100%;
+}
+
+#mobile-main-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faa90b;
+    margin: 82px 0 0 0;
+    padding: 20px;
+}
+
+.mobile-card {
+    width: 100%;
+    background-color: bisque;
+}
+
+.mobile-card img {
+    width: 500px;
+}
+
+#mobile-hero {
+    padding-left: 67px;
+    background-color: #01a9e2;
+}
+
+.mobile-card, #mobile-hero {
+    margin: 10px 0;
 }
 
 @media (min-width: 768px) {
@@ -421,7 +467,7 @@ footer {
         gap: 47%;
     }
 
-    main {
+    #main-section {
         margin: 0 0 -50px 0;   
         scale: 0.8;
     }
@@ -430,6 +476,10 @@ footer {
         margin: -50px 0 0 0;
         scale: 0.8;
     }
+
+    .depoimento {
+        transition: none !important;
+    }
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1500px) {
@@ -437,7 +487,7 @@ footer {
         gap: 50%;
     }
 
-    main {
+    #main-section {
         margin: 64px 16px 16px 16px;   
         scale: 0.9;
     }
@@ -446,4 +496,68 @@ footer {
         margin: -48px 0 24px 0;
         scale: 0.9;
     }
+}
+
+#mobile-nav-brand {
+    background-color: #20101f;
+    padding: 10px;
+}
+
+#mobile-nav-brand img {
+    width: 130%;
+    height: 100%;
+}
+
+.mobile-nav-links {
+    z-index: 998;
+    position: fixed;
+    left: -70%;
+    top: 80px;
+    height: calc(100vh - 60px);
+    width: 70%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: left 0.3s ease;
+    text-align: left;
+}
+
+.mobile-nav-links li {
+    padding-left: 20px;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mobile-nav-links.active {
+    left: 0;
+}
+
+body.nav-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.502);
+  z-index: 997;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
 }
