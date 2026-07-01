@@ -1,4 +1,4 @@
-*Requisitos obrigatórios*:
+*Requisitos obrigatórios implementados*:
 
 ✅ HTML5 semântico - Elementos: <header>,<nav>, <main>, <section>, <footer>
 
@@ -11,5 +11,3 @@
 ✅ Efeito Hover em: Botões e Cards.
 
 ✅ Responsividade - Utilizar Media Query.
-
-*Elementos opcionais*

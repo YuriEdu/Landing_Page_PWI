@@ -14,16 +14,16 @@ function handleBreakpointChange(event) {
                 <img src="images/SGP_Logo_Small.png" alt="">
             </div>
             <div id="mobile-nav">
-                <i id="bars" class="fa-solid fa-bars fa-3x"></i>
+                <i id="bars" class="fa-solid fa-bars fa-2x"></i>
             </div>
             <ul class="mobile-nav-links" id="mobile-nav-links">
                 <div id="mobile-nav-brand">
                     <img src="images/SGP_Logo_Small.png" alt="">
                 </div>
-                <li><i class="fa-regular fa-home fa-2x"></i><a href="#inicio">Início</a></li>
-                <li><i class="fa-regular fa-handshake fa-2x"></i><a href="#serviços">Serviços</a></li>
-                <li><i class="fa-solid fa-question fa-2x"></i><a href="#sobre">Sobre</a></li>
-                <li><i class="fa-solid fa-bullhorn fa-2x"></i><a href="#contato">Contato</a></li>
+                <a href="#inicio"><li><i class="fa-solid fa-home"></i>Início</li></a>
+                <a href="#serviços"><li><i class="fa-solid fa-handshake"></i>Serviços</li></a>
+                <a href="#depoimentos"><li><i class="fa-solid fa-comments"></i>Depoimentos</li></a>
+                <a href="#contato"><li><i class="fa-solid fa-address-book"></i>Contato</li></a>
             </ul>
         </div>
     `;
@@ -34,9 +34,6 @@ function handleBreakpointChange(event) {
     `;
     main.innerHTML = `
         <div id="mobile-main-section">
-            <div id="mobile-hero">
-                <img id="mobile-herocard" src="images/herocard.png" alt="">
-            </div>
             <div class="mobile-card" id="mobile-card1">
                 <img id="escrita" src="images/escrita.png" alt="">
             </div>
@@ -71,10 +68,10 @@ function handleBreakpointChange(event) {
             </div>
             <div id="links">
                 <nav id="nav">
-                    <a href="#">Início</a>
-                    <a href="#">Serviços</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Contato</a>
+                    <a href="#início">Início</a>
+                    <a href="#serviços">Serviços</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#contato">Contato</a>
                 </nav>
             </div>
         </div>
