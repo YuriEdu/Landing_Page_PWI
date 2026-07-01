@@ -21,10 +21,10 @@ function handleBreakpointChange(event) {
                     <i id="close" style="color: white" class="fa-solid fa-x fa-2x"></i>
                     <img src="images/SGP_Logo_Small.png" alt="">
                 </div>
-                <a id="home" href="#inicio"><li><i class="fa-solid fa-home"></i>Início</li></a>
-                <a id="handshake" href="#serviços"><li><i class="fa-solid fa-handshake"></i>Serviços</li></a>
-                <a id="comments" href="#depoimentos"><li><i class="fa-solid fa-comments"></i>Depoimentos</li></a>
-                <a id="address" href="#contato"><li><i class="fa-solid fa-address-book"></i>Contato</li></a>
+                <a id="home" href="#inicio"><li><i class="fa-solid fa-home fa-2x"></i>Início</li></a>
+                <a id="handshake" href="#serviços"><li><i class="fa-solid fa-handshake fa-2x"></i>Serviços</li></a>
+                <a id="comments" href="#depoimentos"><li><i class="fa-solid fa-comments fa-2x"></i>Depoimentos</li></a>
+                <a id="address" href="#contato"><li><i class="fa-solid fa-address-book fa-2x"></i>Contato</li></a>
             </ul>
         </div>
     `;
