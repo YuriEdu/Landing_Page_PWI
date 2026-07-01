@@ -18,12 +18,13 @@ function handleBreakpointChange(event) {
             </div>
             <ul class="mobile-nav-links" id="mobile-nav-links">
                 <div id="mobile-nav-brand">
+                    <i id="close" style="color: white" class="fa-solid fa-x fa-2x"></i>
                     <img src="images/SGP_Logo_Small.png" alt="">
                 </div>
-                <a href="#inicio"><li><i class="fa-solid fa-home"></i>Início</li></a>
-                <a href="#serviços"><li><i class="fa-solid fa-handshake"></i>Serviços</li></a>
-                <a href="#depoimentos"><li><i class="fa-solid fa-comments"></i>Depoimentos</li></a>
-                <a href="#contato"><li><i class="fa-solid fa-address-book"></i>Contato</li></a>
+                <a id="home" href="#inicio"><li><i class="fa-solid fa-home"></i>Início</li></a>
+                <a id="handshake" href="#serviços"><li><i class="fa-solid fa-handshake"></i>Serviços</li></a>
+                <a id="comments" href="#depoimentos"><li><i class="fa-solid fa-comments"></i>Depoimentos</li></a>
+                <a id="address" href="#contato"><li><i class="fa-solid fa-address-book"></i>Contato</li></a>
             </ul>
         </div>
     `;
@@ -46,20 +47,30 @@ function handleBreakpointChange(event) {
         </div>
     `
     const hamburger = document.getElementById('bars');
-    const navLinks = document.getElementById('mobile-nav-links');
+    const closeHamburger = document.getElementById('close');
 
+    const navLinks = document.getElementById('mobile-nav-links');
+    
     hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             overlay.classList.toggle('active');
-
             body.classList.toggle('nav-open');
-
-            hamburger.classList.toggle('fa-x');
-            hamburger.classList.toggle('fa-bars');
 
             const isOpen = hamburger.classList.contains('active');
             hamburger.setAttribute('aria-expanded', isOpen);
         });
+
+    overlay.addEventListener('click', () => {
+        overlay.classList.remove('active');
+        navLinks.classList.remove('active');
+    })
+
+    closeHamburger.addEventListener('click', () => {
+        overlay.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        body.classList.toggle('nav-open');
+    })
+
   } else {
     header.innerHTML = `        
         <div id="header-content">

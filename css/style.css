@@ -420,7 +420,9 @@ footer {
     width: 100%;
     text-align: left;
     height: 100%;
-    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
     overflow: hidden;
 }
 
@@ -474,6 +476,10 @@ footer {
         justify-content: space-between;
         text-align: left;
     }
+
+    .depoimento {
+        transition: none !important;
+    }
 }
 @media screen and (max-width: 1500px) {
     #header-content {
@@ -524,10 +530,10 @@ footer {
 .mobile-nav-links {
     z-index: 998;
     position: fixed;
-    left: -70%;
-    top: 80px;
-    height: calc(100vh - 60px);
-    width: 70%;
+    left: -80%;
+    top: 0;
+    height: 100vh;
+    width: 80%;
     background-color: white;
     flex-direction: column;
     align-items: center;
@@ -552,27 +558,26 @@ footer {
 }
 
 body.nav-open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.502);
-  z-index: 997;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.502);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
 .overlay.active {
-  opacity: 1;
-  pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .dep-profile {
@@ -601,4 +606,8 @@ i.right-quote {
     text-align: right;
     padding: 16px;
     overflow: hidden;
+}
+
+#close {
+    padding: 14px;
 }
