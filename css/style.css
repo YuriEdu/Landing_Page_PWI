@@ -238,12 +238,7 @@ header {
     height: auto;
     margin: 8px 0;
     background-color: #20101f;
-    transition: all 0.5s ease;
     overflow: hidden;
-}
-
-.depoimento:hover {
-    scale: 1.05;
 }
 
 footer {
@@ -380,7 +375,6 @@ footer {
 
     .depoimento {
         width: 120vw;
-        transition: none;
     }
 
     #hero-section {
@@ -477,9 +471,6 @@ footer {
         text-align: left;
     }
 
-    .depoimento {
-        transition: none !important;
-    }
 }
 @media screen and (max-width: 1500px) {
     #header-content {
@@ -496,9 +487,6 @@ footer {
         scale: 0.8;
     }
 
-    .depoimento {
-        transition: none !important;
-    }
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1500px) {
