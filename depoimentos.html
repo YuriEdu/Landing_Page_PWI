@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saul Goodman Productions - Contrate-nos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/depoimentos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico">
+    <script src="js/depoimentos.js" defer></script>
+</head>
+<body>
+    <header id="inicio">
+
+    </header>
+
+    <div class="overlay" id="pageOverlay"></div>
+    
+    <main>
+
+          <div class="form-container">
+            <img style="width: 90%; min-width: 100px; max-width: 500px;" src="images/SGP_Logo.png" alt="">
+            <div class="subtitle" style="text-align: center;"><em>"Sempre Chame o Saul para os seus comerciais de TV!"</em></div>
+            
+            <form id="protoForm">
+                <h1 style="color: #20101f; margin: 10px; ">Dê sua opinião sobre os nossos serviços</h1>
+
+                <div class="form-group">
+                    <label for="companyName">Nome da Empresa / Negócio</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="Ex: Los Pollos Hermanos" required>
+                </div>
+
+                <h2 style="color: #20101f; font-size: 18px; width: 100%; margin-top: 10px; margin-left: 14px; margin-bottom: -14px;">Dê uma nota para sua experiência</h2>
+                <fieldset class="star-rating">
+                    
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 estrelas">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 estrelas">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 estrelas">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 estrelas">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 estrela">★</label>
+                </fieldset>
+
+
+                <div class="form-group">
+                    <label for="depoimento">Deixe aqui seu depoimento</label>
+                    <textarea id="novoDepoimento" name="novoDepoimento" placeholder="Ex: Devo dizer que amei cada segundo do trabalho dos rapazes da Saul Goodman Productions e olha que povo charmoso também, viu?..."></textarea>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" id="clearBtn" class="btn-clear" onclick="resetStars()">Limpar Formulário</button>
+                    <button type="submit" class="btn-submit">Enviar Depoimento</button>
+                </div>
+            </form>
+            
+            <div id="statusMsg" class="status-msg"></div>
+        </div>
+    </main>
+
+    <footer id="contato" class="footer-classic" role="contentinfo">
+        <div class="footer-classic__container">
+            <div class="footer-classic__main">
+                
+                <div class="footer-classic__brand">
+                    <a href="#" class="logo">
+                        <img src="images/SGP_Logo_Small.png" alt="">
+                    </a>
+                    <p>
+                        Trazendo comerciais profissionais para o seu negócio, com a velocidade e eficiência que você precisa.
+                    </p>
+                </div>
+
+                <div class="footer-classic__links">
+                    <h3 class="footer-classic__heading">Saul Goodman Productions</h3>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Nosso Time</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Contate-nos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-classic__links">
+                    <h3 class="footer-classic__heading">Recursos</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Auxílio / FAQ</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-classic__bottom">
+                
+                <p class="footer-classic__copyright">
+                    © 2026 Saul Goodman Productions. <a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a>
+                </p>
+
+                <nav class="footer-classic__social" aria-label="Social Media">
+                    <ul style="font-size: 30px">
+                        <li><a href="#"><i style="color:white" class="fa-brands fa-facebook"></i><title>Facebook</title>
+                        <li><a href="#"><i style="color:white" class="fa-brands fa-bluesky"></i><title>Facebook</title>
+                        <li><a href="#"><i style="color:white; font-size: 34px;" class="fa-brands fa-instagram"></i><title>Facebook</title>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+:root {
+    --border: #a8a9a9;
+    --clear: #414d4d;
+    --light-background: #faa90b;
+    --dark-background: #20101f;
+    --font-family: 'Anton Black', system-ui, -apple-system, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    width: 90vw;
+    overflow-x: visible;
+}
+
+#protoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    border: 3px solid var(--dark-background);
+    background-color: var(--light-background);
+    padding: 24px;
+    margin: 32px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 
+        20px -20px 0 0 #01a9e2,
+        20px -20px 0 3px #20101f,
+        40px -40px 0 0 #f1007a,
+        40px -40px 0 3px #20101f;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2px;
+    width: 100%;
+}
+
+.form-group label {
+    color: var(--dark-background);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.form-group input {
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.form-group select {
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+option {
+    background-color: whitesmoke;
+    font-weight: normal;
+
+}
+
+.form-group textarea {
+    font-family: var(--font-family);
+    font-size: 18px;
+    padding: 12px;
+    height: 90px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    width: 100%;
+    display: flex;
+}
+
+.btn-wipe {
+    width: 100%;
+    background-color: var(--clear);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    margin: 6px;
+    transition: all 0.5s ease;
+}
+
+.btn-wipe:hover {
+    background-color: #606466;
+}
+
+
+.btn-submit {
+    background-color: #01a9e2; 
+    box-shadow: 6px 7px 0 4px #f1007a; 
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    width: 50%;
+    margin: 6px;
+}
+
+.btn-submit:hover {
+    box-shadow: none;
+    background-color: #18c4fd;
+}
+
+.btn-clear {
+    background-color: var(--clear);
+    color: white;
+    transition: all 0.5s ease;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    width: 50%;
+    margin: 6px;
+}
+
+.btn-clear:hover {
+    background-color: #606466;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}

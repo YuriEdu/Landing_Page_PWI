@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saul Goodman Productions - Contrate-nos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contratar.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico">
+    <script src="js/contratar.js" defer></script>
+</head>
+<body>
+    <header id="inicio">
+
+    </header>
+
+    <div class="overlay" id="pageOverlay"></div>
+    
+    <main>
+
+          <div class="form-container">
+            <img style="width: 90%; min-width: 100px; max-width: 500px;" src="images/SGP_Logo.png" alt="">
+            <div class="subtitle" style="text-align: center;"><em>"Sempre Chame o Saul para os seus comerciais de TV!"</em></div>
+            
+            <form id="protoForm">
+                <div class="form-group">
+                    <label for="companyName">Nome da Empresa / Negócio</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="Ex: Los Pollos Hermanos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="businessType">Ramo de Atuação</label>
+                    <input type="text" id="businessType" name="businessType" placeholder="Ex: Fast Food, Advocacia, Oficina">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: negociofascinante123@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Ex: +55 87 98765-4321" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="commercialGoal">Objetivo Principal do Comercial</label>
+                    <select id="commercialGoal" name="commercialGoal">
+                        <option value="">Selecione um objetivo...</option>
+                        <option value="brand_awareness">Ficar famoso na cidade</option>
+                        <option value="crisis_management">Limpar a barra da empresa (Gestão de Crise)</option>
+                        <option value="sales">Destruir a concorrência / Vender Mais</option>
+                        <option value="recruitment">Contratar novos "parceiros de negócios"</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Orçamento Estimado ($)</label>
+                    <select id="budget" name="budget">
+                        <option value="">Selecione o orçamento...</option>
+                        <option value="low">Tenho pouca grana (Estilo Lavanderia)</option>
+                        <option value="medium">Orçamento Justo (Dinheiro vivo em bolsas)</option>
+                        <option value="high">Dinheiro não é problema (Nível Cartel)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ideas">Ideias para o Roteiro ou Elementos Visuais</label>
+                    <textarea id="ideas" name="ideas" placeholder="Ex: Quero bandeiras americanas gigantes ao fundo, modelos ou o Saul apontando para a câmera..."></textarea>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" id="wipeBtn" class="btn-wipe" onclick="clearForm()">Limpar Formulário</button>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" id="clearBtn" class="btn-clear">Limpar Dados</button>
+                    <button type="submit" class="btn-submit">Salvar Briefing</button>
+                </div>
+            </form>
+            
+            <div id="statusMsg" class="status-msg"></div>
+        </div>
+    </main>
+
+    <footer id="contato" class="footer-classic" role="contentinfo">
+        <div class="footer-classic__container">
+            <div class="footer-classic__main">
+                
+                <div class="footer-classic__brand">
+                    <a href="#" class="logo">
+                        <img src="images/SGP_Logo_Small.png" alt="">
+                    </a>
+                    <p>
+                        Trazendo comerciais profissionais para o seu negócio, com a velocidade e eficiência que você precisa.
+                    </p>
+                </div>
+
+                <div class="footer-classic__links">
+                    <h3 class="footer-classic__heading">Saul Goodman Productions</h3>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Nosso Time</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Contate-nos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-classic__links">
+                    <h3 class="footer-classic__heading">Recursos</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Auxílio / FAQ</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-classic__bottom">
+                
+                <p class="footer-classic__copyright">
+                    © 2026 Saul Goodman Productions. <a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a>
+                </p>
+
+                <nav class="footer-classic__social" aria-label="Social Media">
+                    <ul style="font-size: 30px">
+                        <li><a href="#"><i style="color:white" class="fa-brands fa-facebook"></i><title>Facebook</title>
+                        <li><a href="#"><i style="color:white" class="fa-brands fa-bluesky"></i><title>Facebook</title>
+                        <li><a href="#"><i style="color:white; font-size: 34px;" class="fa-brands fa-instagram"></i><title>Facebook</title>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
