@@ -307,7 +307,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 mediaQuery.addEventListener("change", handleBreakpointChange);
 
 handleBreakpointChange(mediaQuery);

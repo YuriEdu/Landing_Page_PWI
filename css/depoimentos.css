@@ -180,3 +180,27 @@ option {
 #novoDepoimento {
     height: 300px;
 }
+
+/* Customização dos estados dos inputs */
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid {
+  border: 2px solid #ff3838 !important;
+  background-color: #fff1f1 !important;
+}
+
+.form-group input.valid,
+.form-group select.valid,
+.form-group textarea.valid {
+  border: 2px solid #2ecc71 !important;
+  background-color: #f4fbf7 !important;
+}
+
+/* Estilização da mensagem de erro */
+.error-message {
+  color: #ff3838;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  font-weight: bold;
+  display: none;
+}

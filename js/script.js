@@ -3,10 +3,14 @@ const heroSection = document.getElementById("hero-section");
 const main = document.querySelector("main");
 const body = document.querySelector("body");
 const overlay = document.querySelector("#pageOverlay");
+const depoimentos = document.querySelector("#depoimentos");
+const button = document.querySelector("#button-container");
 
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 function handleBreakpointChange(event) {
+    const button = document.querySelector("#button-container");
+    
   if (event.matches) {
     header.innerHTML = `
         <div id="mobile-header">
@@ -49,6 +53,7 @@ function handleBreakpointChange(event) {
             </div>
         </div>
     `
+
     const hamburger = document.getElementById('bars');
     const closeHamburger = document.getElementById('close');
 

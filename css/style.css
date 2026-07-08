@@ -209,7 +209,7 @@ header {
 #button-container {
     display: flex;
     justify-content: flex-start;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 #button-container button {
@@ -403,6 +403,12 @@ footer {
 
     #hero-section {
         height: auto;
+    }
+
+    .button-container a button {
+        font-size: 1px; 
+        padding: 8px; 
+        margin-bottom: 12px;
     }
 }
 
@@ -622,4 +628,32 @@ i.right-quote {
 
 #close {
     padding: 14px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    font-family: var(--font-family);
+    outline: none;
+    background-color: #01a9e2;
+    color: #20101f;
+    font-weight: bold;
+    border: none;
+    box-shadow: 10px 10px 0 4px #f1007a;
+    transition: all 0.3s ease;
+}
+
+.button-container button:hover {
+    box-shadow: none;
+    background-color: #18c4fd;
+}
+
+.button-container a button {
+    font-size: 24px; 
+    padding: 24px; 
+    margin-bottom: 24px;
 }
